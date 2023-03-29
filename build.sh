@@ -60,3 +60,6 @@ $STRIP --strip-all $AAPT2
 $STRIP --strip-all $ZIPALIGN
 
 [ $? -eq 0 ] && { echogreen "aapt2 and zipalign binary built sucessfully"; }
+
+mv "$aapt2" "$aapt2"_"$TARGET_ABI"
+mv "$zipalign" "$zipalign"_"$TARGET_ABI"
