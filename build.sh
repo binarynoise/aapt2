@@ -63,5 +63,5 @@ $STRIP --strip-all $ZIPALIGN
 
 [ $? -eq 0 ] && { echogreen "aapt2 and zipalign binary built sucessfully"; }
 
-mv "$AAPT2" "$AAPT2_$TARGET_ABI"
-mv "$ZIPALIGN" "$ZIPALIGN_$TARGET_ABI"
+mv "$AAPT2" "${AAPT2}_${TARGET_ABI}"
+mv "$ZIPALIGN" "${ZIPALIGN}_${TARGET_ABI}"
