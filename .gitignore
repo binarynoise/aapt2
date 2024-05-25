@@ -12,3 +12,11 @@ _deps
 
 build/
 dist/
+
+
+src/base/tools/aapt2/Configuration.pb.cc
+src/base/tools/aapt2/Configuration.pb.h
+src/base/tools/aapt2/Resources.pb.cc
+src/base/tools/aapt2/Resources.pb.h
+src/base/tools/aapt2/ResourcesInternal.pb.cc
+src/base/tools/aapt2/ResourcesInternal.pb.h
