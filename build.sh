@@ -23,7 +23,7 @@ CLEAN=termux-elf-cleaner
 BUILDDIR="$(pwd)/build"
 
 ARCH=$1
-API=24
+API=34
 [ -z $ARCH ] && ARCH=aarch64
 
 case $ARCH in
@@ -63,5 +63,5 @@ $STRIP --strip-all $ZIPALIGN
 
 [ $? -eq 0 ] && { echogreen "aapt2 and zipalign binary built sucessfully"; }
 
-mv "$AAPT2" "${AAPT2}_${TARGET_ABI}"
-mv "$ZIPALIGN" "${ZIPALIGN}_${TARGET_ABI}"
+mv "$AAPT2" "${AAPT2}_${ABI}"
+mv "$ZIPALIGN" "${ZIPALIGN}_${ABI}"

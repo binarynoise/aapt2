@@ -20,3 +20,5 @@ src/base/tools/aapt2/Resources.pb.cc
 src/base/tools/aapt2/Resources.pb.h
 src/base/tools/aapt2/ResourcesInternal.pb.cc
 src/base/tools/aapt2/ResourcesInternal.pb.h
+
+aapt2.tar.gz

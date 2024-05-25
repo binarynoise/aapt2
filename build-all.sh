@@ -9,3 +9,5 @@ for abi in arm64 arm x86 x86_64; do
   nice ./build.sh $abi
 
 done
+
+tar czf aapt2.tar.gz build/bin/aapt2*
