@@ -54,8 +54,8 @@ ninja -C $BUILDDIR -j$(nproc) || exit 1
 AAPT2=$BUILDDIR/bin/aapt2
 ZIPALIGN=$BUILDDIR/bin/zipalign
 
-$CLEAN --api-level $API $AAPT2
-$CLEAN --api-level $API $ZIPALIGN
+#$CLEAN --api-level $API $AAPT2
+#$CLEAN --api-level $API $ZIPALIGN
 $STRIP --strip-all $AAPT2
 $STRIP --strip-all $ZIPALIGN
 
