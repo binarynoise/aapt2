@@ -10,4 +10,4 @@ for abi in arm64 arm x86 x86_64; do
 
 done
 
-tar czf aapt2.tar.gz build/bin/aapt2*
+tar czf aapt2.tar.gz -C build/bin/ aapt2_arm64-v8a aapt2_armeabi-v7a aapt2_x86 aapt2_x86_64
