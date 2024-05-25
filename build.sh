@@ -44,7 +44,9 @@ cmake -GNinja -B $BUILDDIR \
     -DCMAKE_SYSTEM_NAME="Android" \
     -DCMAKE_BUILD_TYPE="Release" \
     -DANDROID_STL="c++_static" \
-    -DPROTOC_PATH="$(which protoc)"
+    -DPROTOC_PATH="$(which protoc)" \
+    -DCMAKE_MAKE_PROGRAM=$CMAKE_MAKE_PROGRAM \
+
 [ $? -eq 0 ] || { echored "Configure failed!"; exit 1; }
 
 echogreen "Building"
